@@ -38,6 +38,7 @@ services:
     - DATABASE_TYPE=postgres
     - DATABASE_URL=postgresql://mailman:mailmanpass@database/mailmandb
     - HYPERKITTY_API_KEY=someapikey
+    - SECRET_KEY=somerandomelongkey
     ports:
     - "127.0.0.1:8000:8000" # HTTP
     - "127.0.0.1:8080:8080" # uwsgi
